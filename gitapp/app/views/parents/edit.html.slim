@@ -1,0 +1,16 @@
+h1 Editing parent
+
+/* <%= render 'form' %> #@!!TODO figure this out , stuck with it after making the file .slim*/
+
+table.table
+  thead
+    tr
+      th Editing Parents Fields
+      th colspan="3"
+
+  tbody  
+       == render 'form'
+br
+
+= link_to 'Show', @parent, class: 'btn btn-success'
+= link_to 'Back', parents_path, class: 'btn btn-success'

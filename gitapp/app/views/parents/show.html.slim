@@ -1,0 +1,22 @@
+p id="notice" = notice 
+
+h1 Show parents
+
+table.table
+  thead
+    tr
+      th Name
+      th colspan="3"
+
+  tbody
+      tr
+        td = @parent.name 
+        td = @parent.lname  
+        td = link_to 'List Children', parent_children_path(@parent)
+        td = link_to 'Edit', edit_parent_path(@parent) 
+        td = link_to 'Back', parents_path 
+br
+
+p id="notice" = notice 
+
+

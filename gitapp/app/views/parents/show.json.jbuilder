@@ -1,1 +1,1 @@
-json.extract! @parent, :id, :name, :created_at, :updated_at
+json.extract! @parent, :id, :name, :lname :created_at, :updated_at
